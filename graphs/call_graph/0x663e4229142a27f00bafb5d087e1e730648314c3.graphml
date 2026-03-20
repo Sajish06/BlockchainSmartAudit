@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="totalSupply" />
+    <node id="balanceOf" />
+    <node id="allowance" />
+    <node id="transfer" />
+    <node id="transferFrom" />
+    <node id="approve" />
+    <node id="Ownable" />
+    <node id="transferOwnership" />
+    <node id="ownerOf" />
+    <node id="supportsInterface" />
+    <node id="isGeneScience" />
+    <node id="mixGenes" />
+    <node id="getPureFromGene" />
+    <node id="getSex" />
+    <node id="getWizzType" />
+    <node id="clearWizzType" />
+    <node id="setCEO" />
+    <node id="setCFO" />
+    <node id="setCOO" />
+    <node id="pause" />
+    <node id="unpause" />
+    <node id="getWizzPandaQuotaOf" />
+    <node id="getWizzPandaCountOf" />
+    <node id="setTotalWizzPandaOf" />
+    <node id="getWizzTypeOf" />
+    <node id="_transfer" />
+    <node id="_createPanda" />
+    <node id="setSecondsPerBlock" />
+    <node id="getMetadata" />
+    <node id="_owns" />
+    <node id="_approvedFor" />
+    <node id="_approve" />
+    <node id="tokensOfOwner" />
+    <node id="_memcpy" />
+    <node id="_toString" />
+    <node id="setGeneScienceAddress" />
+    <node id="_isReadyToBreed" />
+    <node id="_isSiringPermitted" />
+    <node id="_triggerCooldown" />
+    <node id="approveSiring" />
+    <node id="setAutoBirthFee" />
+    <node id="_isReadyToGiveBirth" />
+    <node id="isReadyToBreed" />
+    <node id="isPregnant" />
+    <node id="_isValidMatingPair" />
+    <node id="_canBreedWithViaAuction" />
+    <node id="canBreedWith" />
+    <node id="_exchangeMatronSireId" />
+    <node id="_breedWith" />
+    <node id="breedWithAuto" />
+    <node id="giveBirth" />
+    <node id="_escrow" />
+    <node id="_addAuction" />
+    <node id="_cancelAuction" />
+    <node id="_bid" />
+    <node id="_removeAuction" />
+    <node id="_isOnAuction" />
+    <node id="_currentPrice" />
+    <node id="_computeCurrentPrice" />
+    <node id="_computeCut" />
+    <node id="ClockAuction" />
+    <node id="withdrawBalance" />
+    <node id="createAuction" />
+    <node id="bid" />
+    <node id="cancelAuction" />
+    <node id="cancelAuctionWhenPaused" />
+    <node id="getAuction" />
+    <node id="getCurrentPrice" />
+    <node id="SiringClockAuction" />
+    <node id="SaleClockAuction" />
+    <node id="createGen0Auction" />
+    <node id="createPanda" />
+    <node id="surprisePanda" />
+    <node id="packageCount" />
+    <node id="averageGen0SalePrice" />
+    <node id="SaleClockAuctionERC20" />
+    <node id="erc20ContractSwitch" />
+    <node id="_addAuctionERC20" />
+    <node id="bidERC20" />
+    <node id="withdrawERC20Balance" />
+    <node id="_bidERC20" />
+    <node id="setSaleAuctionAddress" />
+    <node id="setSaleAuctionERC20Address" />
+    <node id="setSiringAuctionAddress" />
+    <node id="createSaleAuction" />
+    <node id="createSaleAuctionERC20" />
+    <node id="switchSaleAuctionERC20For" />
+    <node id="createSiringAuction" />
+    <node id="bidOnSiringAuction" />
+    <node id="withdrawAuctionBalances" />
+    <node id="createWizzPanda" />
+    <node id="_computeNextGen0Price" />
+    <node id="PandaCore" />
+    <node id="init" />
+    <node id="setNewAddress" />
+    <node id="constructor" />
+    <node id="getPanda" />
+    <node id="require" />
+    <node id="Transfer" />
+    <node id="Panda" />
+    <node id="Birth" />
+    <node id="Approval" />
+    <node id="GeneScienceInterface" />
+    <node id="Pregnant" />
+    <node id="keccak256" />
+    <node id="Abortion" />
+    <node id="AuctionCreated" />
+    <node id="AuctionCancelled" />
+    <node id="AuctionSuccessful" />
+    <node id="Pause" />
+    <node id="Unpause" />
+    <node id="ERC721" />
+    <node id="Auction" />
+    <node id="AuctionERC20Created" />
+    <node id="ERC20" />
+    <node id="ContractUpgrade" />
+    <edge source="transfer" target="require" />
+    <edge source="transfer" target="_owns" />
+    <edge source="transfer" target="_transfer" />
+    <edge source="transferFrom" target="require" />
+    <edge source="transferFrom" target="_approvedFor" />
+    <edge source="transferFrom" target="_owns" />
+    <edge source="transferFrom" target="_transfer" />
+    <edge source="approve" target="require" />
+    <edge source="approve" target="_owns" />
+    <edge source="approve" target="_approve" />
+    <edge source="approve" target="Approval" />
+    <edge source="ownerOf" target="require" />
+    <edge source="setCEO" target="require" />
+    <edge source="setCFO" target="require" />
+    <edge source="setCOO" target="require" />
+    <edge source="pause" target="Pause" />
+    <edge source="unpause" target="Unpause" />
+    <edge source="unpause" target="require" />
+    <edge source="setTotalWizzPandaOf" target="require" />
+    <edge source="_transfer" target="Transfer" />
+    <edge source="_createPanda" target="require" />
+    <edge source="_createPanda" target="Panda" />
+    <edge source="_createPanda" target="Birth" />
+    <edge source="_createPanda" target="_transfer" />
+    <edge source="setSecondsPerBlock" target="require" />
+    <edge source="tokensOfOwner" target="balanceOf" />
+    <edge source="tokensOfOwner" target="totalSupply" />
+    <edge source="_toString" target="_memcpy" />
+    <edge source="setGeneScienceAddress" target="GeneScienceInterface" />
+    <edge source="setGeneScienceAddress" target="require" />
+    <edge source="approveSiring" target="require" />
+    <edge source="approveSiring" target="_owns" />
+    <edge source="isReadyToBreed" target="require" />
+    <edge source="isReadyToBreed" target="_isReadyToBreed" />
+    <edge source="isPregnant" target="require" />
+    <edge source="_canBreedWithViaAuction" target="_isValidMatingPair" />
+    <edge source="canBreedWith" target="require" />
+    <edge source="canBreedWith" target="_isValidMatingPair" />
+    <edge source="canBreedWith" target="_isSiringPermitted" />
+    <edge source="_breedWith" target="_exchangeMatronSireId" />
+    <edge source="_breedWith" target="_triggerCooldown" />
+    <edge source="_breedWith" target="Pregnant" />
+    <edge source="breedWithAuto" target="require" />
+    <edge source="breedWithAuto" target="_owns" />
+    <edge source="breedWithAuto" target="_isSiringPermitted" />
+    <edge source="breedWithAuto" target="_isReadyToBreed" />
+    <edge source="breedWithAuto" target="_isValidMatingPair" />
+    <edge source="breedWithAuto" target="_breedWith" />
+    <edge source="giveBirth" target="require" />
+    <edge source="giveBirth" target="_isReadyToGiveBirth" />
+    <edge source="giveBirth" target="keccak256" />
+    <edge source="giveBirth" target="Abortion" />
+    <edge source="giveBirth" target="_createPanda" />
+    <edge source="_addAuction" target="require" />
+    <edge source="_addAuction" target="AuctionCreated" />
+    <edge source="_cancelAuction" target="_removeAuction" />
+    <edge source="_cancelAuction" target="_transfer" />
+    <edge source="_cancelAuction" target="AuctionCancelled" />
+    <edge source="_bid" target="require" />
+    <edge source="_bid" target="_isOnAuction" />
+    <edge source="_bid" target="_currentPrice" />
+    <edge source="_bid" target="_removeAuction" />
+    <edge source="_bid" target="_computeCut" />
+    <edge source="_bid" target="AuctionSuccessful" />
+    <edge source="_currentPrice" target="_computeCurrentPrice" />
+    <edge source="ClockAuction" target="require" />
+    <edge source="ClockAuction" target="ERC721" />
+    <edge source="withdrawBalance" target="require" />
+    <edge source="createAuction" target="require" />
+    <edge source="createAuction" target="_owns" />
+    <edge source="createAuction" target="_escrow" />
+    <edge source="createAuction" target="Auction" />
+    <edge source="createAuction" target="_addAuction" />
+    <edge source="createAuction" target="_addAuctionERC20" />
+    <edge source="bid" target="_bid" />
+    <edge source="bid" target="_transfer" />
+    <edge source="bid" target="require" />
+    <edge source="cancelAuction" target="require" />
+    <edge source="cancelAuction" target="_isOnAuction" />
+    <edge source="cancelAuction" target="_cancelAuction" />
+    <edge source="cancelAuctionWhenPaused" target="require" />
+    <edge source="cancelAuctionWhenPaused" target="_isOnAuction" />
+    <edge source="cancelAuctionWhenPaused" target="_cancelAuction" />
+    <edge source="getAuction" target="require" />
+    <edge source="getAuction" target="_isOnAuction" />
+    <edge source="getCurrentPrice" target="require" />
+    <edge source="getCurrentPrice" target="_isOnAuction" />
+    <edge source="getCurrentPrice" target="_currentPrice" />
+    <edge source="createGen0Auction" target="require" />
+    <edge source="createGen0Auction" target="_escrow" />
+    <edge source="createGen0Auction" target="Auction" />
+    <edge source="createGen0Auction" target="_addAuction" />
+    <edge source="createGen0Auction" target="_owns" />
+    <edge source="createGen0Auction" target="_approve" />
+    <edge source="createGen0Auction" target="_computeNextGen0Price" />
+    <edge source="createPanda" target="require" />
+    <edge source="createPanda" target="_createPanda" />
+    <edge source="surprisePanda" target="keccak256" />
+    <edge source="surprisePanda" target="require" />
+    <edge source="surprisePanda" target="_transfer" />
+    <edge source="erc20ContractSwitch" target="require" />
+    <edge source="_addAuctionERC20" target="require" />
+    <edge source="_addAuctionERC20" target="AuctionERC20Created" />
+    <edge source="bidERC20" target="require" />
+    <edge source="bidERC20" target="_bidERC20" />
+    <edge source="bidERC20" target="_transfer" />
+    <edge source="withdrawERC20Balance" target="require" />
+    <edge source="withdrawERC20Balance" target="ERC20" />
+    <edge source="_bidERC20" target="require" />
+    <edge source="_bidERC20" target="_isOnAuction" />
+    <edge source="_bidERC20" target="_currentPrice" />
+    <edge source="_bidERC20" target="_removeAuction" />
+    <edge source="_bidERC20" target="_computeCut" />
+    <edge source="_bidERC20" target="ERC20" />
+    <edge source="_bidERC20" target="AuctionSuccessful" />
+    <edge source="setSaleAuctionAddress" target="SaleClockAuction" />
+    <edge source="setSaleAuctionAddress" target="require" />
+    <edge source="setSaleAuctionERC20Address" target="SaleClockAuctionERC20" />
+    <edge source="setSaleAuctionERC20Address" target="require" />
+    <edge source="setSiringAuctionAddress" target="SiringClockAuction" />
+    <edge source="setSiringAuctionAddress" target="require" />
+    <edge source="createSaleAuction" target="require" />
+    <edge source="createSaleAuction" target="_owns" />
+    <edge source="createSaleAuction" target="isPregnant" />
+    <edge source="createSaleAuction" target="_approve" />
+    <edge source="createSaleAuctionERC20" target="require" />
+    <edge source="createSaleAuctionERC20" target="_owns" />
+    <edge source="createSaleAuctionERC20" target="isPregnant" />
+    <edge source="createSaleAuctionERC20" target="_approve" />
+    <edge source="createSiringAuction" target="require" />
+    <edge source="createSiringAuction" target="_owns" />
+    <edge source="createSiringAuction" target="isReadyToBreed" />
+    <edge source="createSiringAuction" target="_approve" />
+    <edge source="bidOnSiringAuction" target="require" />
+    <edge source="bidOnSiringAuction" target="_owns" />
+    <edge source="bidOnSiringAuction" target="isReadyToBreed" />
+    <edge source="bidOnSiringAuction" target="_canBreedWithViaAuction" />
+    <edge source="bidOnSiringAuction" target="_breedWith" />
+    <edge source="createWizzPanda" target="_createPanda" />
+    <edge source="_computeNextGen0Price" target="require" />
+    <edge source="init" target="require" />
+    <edge source="init" target="_createPanda" />
+    <edge source="setNewAddress" target="ContractUpgrade" />
+    <edge source="constructor" target="require" />
+  </graph>
+</graphml>

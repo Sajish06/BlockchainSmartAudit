@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="constructor" />
+    <node id="newOwner" />
+    <node id="deleteOwner" />
+    <node id="withdrawAll" />
+    <node id="require" />
+    <edge source="newOwner" target="require" />
+    <edge source="deleteOwner" target="require" />
+  </graph>
+</graphml>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="Ethraffle_v4b" />
+    <node id="constructor" />
+    <node id="buyTickets" />
+    <node id="chooseWinner" />
+    <node id="getRefund" />
+    <node id="endRaffle" />
+    <node id="togglePause" />
+    <node id="kill" />
+    <node id="Contestant" />
+    <node id="TicketPurchase" />
+    <node id="keccak256" />
+    <node id="RaffleResult" />
+    <node id="TicketRefund" />
+    <node id="selfdestruct" />
+    <edge source="constructor" target="buyTickets" />
+    <edge source="buyTickets" target="Contestant" />
+    <edge source="buyTickets" target="TicketPurchase" />
+    <edge source="buyTickets" target="chooseWinner" />
+    <edge source="chooseWinner" target="keccak256" />
+    <edge source="chooseWinner" target="RaffleResult" />
+    <edge source="getRefund" target="Contestant" />
+    <edge source="getRefund" target="TicketRefund" />
+    <edge source="endRaffle" target="TicketRefund" />
+    <edge source="endRaffle" target="RaffleResult" />
+    <edge source="kill" target="selfdestruct" />
+  </graph>
+</graphml>

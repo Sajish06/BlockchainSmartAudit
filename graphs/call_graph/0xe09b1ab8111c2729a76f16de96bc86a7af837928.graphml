@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="constructor" />
+    <node id="setBotAddress" />
+    <node id="setSecretSigner" />
+    <node id="wager" />
+    <node id="play" />
+    <node id="donateForContractHealth" />
+    <node id="withdrawDonation" />
+    <node id="refund" />
+    <node id="withdrawDevFee" />
+    <node id="withdrawBotFee" />
+    <node id="getBetInfo" />
+    <node id="getContractBalance" />
+    <node id="getCollateralBalance" />
+    <node id="kill" />
+    <node id="payout" />
+    <node id="sendRefund" />
+    <node id="sendFunds" />
+    <node id="loseWager" />
+    <node id="clearStorage" />
+    <node id="clearProcessedBet" />
+    <node id="transferAnyERC20Token" />
+    <node id="transfer" />
+    <node id="require" />
+    <node id="keccak256" />
+    <node id="ecrecover" />
+    <node id="Wager" />
+    <node id="revert" />
+    <node id="blockhash" />
+    <node id="JackpotPayment" />
+    <node id="Donate" />
+    <node id="selfdestruct" />
+    <node id="Win" />
+    <node id="Refund" />
+    <node id="FailedPayment" />
+    <node id="Payment" />
+    <node id="Lose" />
+    <node id="ERC20Interface" />
+    <edge source="wager" target="require" />
+    <edge source="wager" target="getCollateralBalance" />
+    <edge source="wager" target="keccak256" />
+    <edge source="wager" target="ecrecover" />
+    <edge source="wager" target="Wager" />
+    <edge source="play" target="keccak256" />
+    <edge source="play" target="require" />
+    <edge source="play" target="revert" />
+    <edge source="play" target="blockhash" />
+    <edge source="play" target="JackpotPayment" />
+    <edge source="play" target="loseWager" />
+    <edge source="play" target="payout" />
+    <edge source="donateForContractHealth" target="Donate" />
+    <edge source="withdrawDonation" target="require" />
+    <edge source="withdrawDonation" target="sendFunds" />
+    <edge source="refund" target="require" />
+    <edge source="refund" target="sendRefund" />
+    <edge source="withdrawDevFee" target="require" />
+    <edge source="withdrawDevFee" target="sendFunds" />
+    <edge source="withdrawBotFee" target="require" />
+    <edge source="withdrawBotFee" target="sendFunds" />
+    <edge source="kill" target="require" />
+    <edge source="kill" target="selfdestruct" />
+    <edge source="payout" target="Win" />
+    <edge source="sendRefund" target="Refund" />
+    <edge source="sendFunds" target="FailedPayment" />
+    <edge source="sendFunds" target="Payment" />
+    <edge source="loseWager" target="Lose" />
+    <edge source="clearStorage" target="clearProcessedBet" />
+    <edge source="transferAnyERC20Token" target="ERC20Interface" />
+  </graph>
+</graphml>

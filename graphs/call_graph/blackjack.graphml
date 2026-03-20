@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="deal" />
+    <node id="valueOf" />
+    <node id="isAce" />
+    <node id="isTen" />
+    <node id="BlackJack" />
+    <node id="constructor" />
+    <node id="hit" />
+    <node id="stand" />
+    <node id="checkGameResult" />
+    <node id="calculateScore" />
+    <node id="getPlayerCard" />
+    <node id="getHouseCard" />
+    <node id="getPlayerCardsNumber" />
+    <node id="getHouseCardsNumber" />
+    <node id="getGameState" />
+    <node id="keccak256" />
+    <node id="Deal" />
+    <node id="Game" />
+    <node id="GameStatus" />
+    <node id="Log" />
+    <edge source="deal" target="keccak256" />
+    <edge source="deal" target="Deal" />
+    <edge source="deal" target="Game" />
+    <edge source="deal" target="checkGameResult" />
+    <edge source="hit" target="Deal" />
+    <edge source="hit" target="checkGameResult" />
+    <edge source="stand" target="calculateScore" />
+    <edge source="stand" target="Deal" />
+    <edge source="stand" target="checkGameResult" />
+    <edge source="checkGameResult" target="calculateScore" />
+    <edge source="checkGameResult" target="GameStatus" />
+    <edge source="checkGameResult" target="Log" />
+  </graph>
+</graphml>

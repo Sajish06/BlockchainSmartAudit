@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="receiveApproval" />
+    <node id="migrateFrom" />
+    <node id="balanceOf" />
+    <node id="allowance" />
+    <node id="transfer" />
+    <node id="transferFrom" />
+    <node id="approve" />
+    <node id="safeMul" />
+    <node id="safeDiv" />
+    <node id="safeSub" />
+    <node id="safeAdd" />
+    <node id="max64" />
+    <node id="min64" />
+    <node id="max256" />
+    <node id="min256" />
+    <node id="assert" />
+    <node id="isToken" />
+    <node id="daoPOLSKAtokens" />
+    <node id="setSupply" />
+    <node id="setotherchainstotalsupply" />
+    <node id="approveAndCall" />
+    <node id="burn" />
+    <node id="burnFrom" />
+    <node id="constructor" />
+    <node id="setTokenInformation" />
+    <node id="setChainsAddresses" />
+    <node id="DAOPolskaTokenICOregulations" />
+    <node id="sendTokenAw" />
+    <node id="createDaoPOLSKAtokens" />
+    <node id="setBonusCreationRate" />
+    <node id="FundsTransfer" />
+    <node id="PartialFundsTransfer" />
+    <node id="turnrefund" />
+    <node id="fundingState" />
+    <node id="turnmigrate" />
+    <node id="finalize" />
+    <node id="migrate" />
+    <node id="refundTRA" />
+    <node id="preICOregulations" />
+    <node id="Transfer" />
+    <node id="Approval" />
+    <node id="tokenRecipient" />
+    <node id="require" />
+    <node id="Burn" />
+    <node id="receivedEther" />
+    <node id="UpdatedTokenInformation" />
+    <node id="StandardToken" />
+    <node id="MigrationAgent" />
+    <node id="Migrate" />
+    <node id="Refund" />
+    <edge source="transfer" target="safeSub" />
+    <edge source="transfer" target="safeAdd" />
+    <edge source="transfer" target="Transfer" />
+    <edge source="transferFrom" target="safeAdd" />
+    <edge source="transferFrom" target="safeSub" />
+    <edge source="transferFrom" target="Transfer" />
+    <edge source="approve" target="Approval" />
+    <edge source="safeMul" target="assert" />
+    <edge source="safeDiv" target="assert" />
+    <edge source="safeSub" target="assert" />
+    <edge source="safeAdd" target="assert" />
+    <edge source="approveAndCall" target="tokenRecipient" />
+    <edge source="approveAndCall" target="approve" />
+    <edge source="burn" target="require" />
+    <edge source="burn" target="Burn" />
+    <edge source="burnFrom" target="require" />
+    <edge source="burnFrom" target="Burn" />
+    <edge source="constructor" target="receivedEther" />
+    <edge source="setTokenInformation" target="UpdatedTokenInformation" />
+    <edge source="sendTokenAw" target="StandardToken" />
+    <edge source="createDaoPOLSKAtokens" target="Transfer" />
+    <edge source="migrate" target="MigrationAgent" />
+    <edge source="migrate" target="Migrate" />
+    <edge source="refundTRA" target="Refund" />
+  </graph>
+</graphml>

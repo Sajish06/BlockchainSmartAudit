@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="Owned" />
+    <node id="changeOwner" />
+    <node id="acceptOwnership" />
+    <node id="execute" />
+    <node id="Marriage" />
+    <node id="numberOfMajorEvents" />
+    <node id="numberOfMessages" />
+    <node id="createMarriage" />
+    <node id="setStatus" />
+    <node id="setMajorEvent" />
+    <node id="sendMessage" />
+    <node id="require" />
+    <node id="Event" />
+    <node id="MajorEvent" />
+    <node id="Message" />
+    <node id="MessageSent" />
+    <edge source="createMarriage" target="require" />
+    <edge source="createMarriage" target="Event" />
+    <edge source="createMarriage" target="MajorEvent" />
+    <edge source="setStatus" target="setMajorEvent" />
+    <edge source="setMajorEvent" target="Event" />
+    <edge source="setMajorEvent" target="MajorEvent" />
+    <edge source="sendMessage" target="Message" />
+    <edge source="sendMessage" target="MessageSent" />
+  </graph>
+</graphml>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="Owned" />
+    <node id="changeOwner" />
+    <node id="execute" />
+    <node id="transfer" />
+    <node id="balanceOf" />
+    <node id="TokenSender" />
+    <node id="fill" />
+    <node id="run" />
+    <node id="hasTerminated" />
+    <node id="nTransfers" />
+    <node id="gas" />
+    <node id="Token" />
+    <edge source="TokenSender" target="Token" />
+    <edge source="run" target="gas" />
+  </graph>
+</graphml>

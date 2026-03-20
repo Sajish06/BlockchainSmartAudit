@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="constructor" />
+    <node id="OpenToThePublic" />
+    <node id="AdjustBetAmounts" />
+    <node id="AdjustDifficulty" />
+    <node id="wager" />
+    <node id="play" />
+    <node id="donate" />
+    <node id="payout" />
+    <node id="donateToWhale" />
+    <node id="loseWager" />
+    <node id="ethBalance" />
+    <node id="currentDifficulty" />
+    <node id="currentBetLimit" />
+    <node id="hasPlayerWagered" />
+    <node id="winnersPot" />
+    <node id="transferAnyERC20Token" />
+    <node id="transfer" />
+    <node id="BetLimitChanged" />
+    <node id="DifficultyChanged" />
+    <node id="require" />
+    <node id="Wager" />
+    <node id="revert" />
+    <node id="keccak256" />
+    <node id="blockhash" />
+    <node id="Win" />
+    <node id="Donate" />
+    <node id="Lose" />
+    <node id="ERC20Interface" />
+    <edge source="AdjustBetAmounts" target="BetLimitChanged" />
+    <edge source="AdjustDifficulty" target="DifficultyChanged" />
+    <edge source="wager" target="require" />
+    <edge source="wager" target="Wager" />
+    <edge source="play" target="revert" />
+    <edge source="play" target="keccak256" />
+    <edge source="play" target="blockhash" />
+    <edge source="play" target="loseWager" />
+    <edge source="play" target="payout" />
+    <edge source="donate" target="donateToWhale" />
+    <edge source="payout" target="Win" />
+    <edge source="donateToWhale" target="keccak256" />
+    <edge source="donateToWhale" target="Donate" />
+    <edge source="loseWager" target="keccak256" />
+    <edge source="loseWager" target="Lose" />
+    <edge source="transferAnyERC20Token" target="ERC20Interface" />
+  </graph>
+</graphml>

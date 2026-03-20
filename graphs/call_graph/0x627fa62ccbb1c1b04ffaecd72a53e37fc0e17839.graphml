@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="changeOwner" />
+    <node id="confirmOwner" />
+    <node id="WithdrawToken" />
+    <node id="initTokenBank" />
+    <node id="constructor" />
+    <node id="Deposit" />
+    <node id="WitdrawTokenToHolder" />
+    <node id="WithdrawToHolder" />
+    <node id="sha3" />
+    <edge source="WithdrawToken" target="sha3" />
+    <edge source="constructor" target="Deposit" />
+    <edge source="WitdrawTokenToHolder" target="WithdrawToken" />
+  </graph>
+</graphml>

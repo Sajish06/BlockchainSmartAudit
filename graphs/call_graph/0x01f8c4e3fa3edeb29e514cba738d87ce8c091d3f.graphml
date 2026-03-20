@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="SetMinSum" />
+    <node id="SetLogFile" />
+    <node id="Initialized" />
+    <node id="Deposit" />
+    <node id="Collect" />
+    <node id="constructor" />
+    <node id="AddMessage" />
+    <node id="revert" />
+    <node id="LogFile" />
+    <edge source="SetMinSum" target="revert" />
+    <edge source="SetLogFile" target="revert" />
+    <edge source="SetLogFile" target="LogFile" />
+    <edge source="constructor" target="Deposit" />
+  </graph>
+</graphml>

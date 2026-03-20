@@ -1,0 +1,9 @@
+contract,label
+reentrancy,1
+access_control,2
+arithmetic,3
+bad_randomness,4
+denial_of_service,5
+front_running,6
+unchecked_low_level_calls,7
+time_manipulation,8

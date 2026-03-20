@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="revoke" />
+    <node id="changeOwner" />
+    <node id="addOwner" />
+    <node id="removeOwner" />
+    <node id="changeRequirement" />
+    <node id="isOwner" />
+    <node id="hasConfirmed" />
+    <node id="setDailyLimit" />
+    <node id="execute" />
+    <node id="confirm" />
+    <node id="constructor" />
+    <node id="initMultiowned" />
+    <node id="getOwner" />
+    <node id="initDaylimit" />
+    <node id="resetSpentToday" />
+    <node id="initWallet" />
+    <node id="kill" />
+    <node id="create" />
+    <node id="confirmAndCheck" />
+    <node id="reorganizeOwners" />
+    <node id="underLimit" />
+    <node id="today" />
+    <node id="clearPending" />
+    <node id="Deposit" />
+    <node id="Revoke" />
+    <node id="OwnerChanged" />
+    <node id="sha3" />
+    <node id="OwnerAdded" />
+    <node id="OwnerRemoved" />
+    <node id="RequirementChanged" />
+    <node id="suicide" />
+    <node id="ConfirmationNeeded" />
+    <node id="SingleTransact" />
+    <node id="MultiTransact" />
+    <node id="Confirmation" />
+    <edge source="revoke" target="Revoke" />
+    <edge source="changeOwner" target="isOwner" />
+    <edge source="changeOwner" target="clearPending" />
+    <edge source="changeOwner" target="OwnerChanged" />
+    <edge source="changeOwner" target="sha3" />
+    <edge source="addOwner" target="isOwner" />
+    <edge source="addOwner" target="clearPending" />
+    <edge source="addOwner" target="reorganizeOwners" />
+    <edge source="addOwner" target="OwnerAdded" />
+    <edge source="addOwner" target="sha3" />
+    <edge source="removeOwner" target="clearPending" />
+    <edge source="removeOwner" target="reorganizeOwners" />
+    <edge source="removeOwner" target="OwnerRemoved" />
+    <edge source="removeOwner" target="sha3" />
+    <edge source="changeRequirement" target="clearPending" />
+    <edge source="changeRequirement" target="RequirementChanged" />
+    <edge source="changeRequirement" target="sha3" />
+    <edge source="setDailyLimit" target="sha3" />
+    <edge source="execute" target="underLimit" />
+    <edge source="execute" target="sha3" />
+    <edge source="execute" target="confirm" />
+    <edge source="execute" target="ConfirmationNeeded" />
+    <edge source="execute" target="create" />
+    <edge source="execute" target="SingleTransact" />
+    <edge source="confirm" target="create" />
+    <edge source="confirm" target="MultiTransact" />
+    <edge source="constructor" target="Deposit" />
+    <edge source="initDaylimit" target="today" />
+    <edge source="resetSpentToday" target="sha3" />
+    <edge source="initWallet" target="initDaylimit" />
+    <edge source="initWallet" target="initMultiowned" />
+    <edge source="kill" target="suicide" />
+    <edge source="kill" target="sha3" />
+    <edge source="confirmAndCheck" target="Confirmation" />
+    <edge source="underLimit" target="today" />
+  </graph>
+</graphml>

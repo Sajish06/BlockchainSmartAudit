@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="mul" />
+    <node id="div" />
+    <node id="sub" />
+    <node id="add" />
+    <node id="balanceOf" />
+    <node id="transfer" />
+    <node id="allowance" />
+    <node id="transferFrom" />
+    <node id="approve" />
+    <node id="Ownable" />
+    <node id="transferOwnership" />
+    <node id="pause" />
+    <node id="unpause" />
+    <node id="batchTransfer" />
+    <node id="BecToken" />
+    <node id="constructor" />
+    <node id="require" />
+    <node id="Transfer" />
+    <node id="Approval" />
+    <node id="OwnershipTransferred" />
+    <node id="Pause" />
+    <node id="Unpause" />
+    <node id="revert" />
+    <edge source="mul" target="require" />
+    <edge source="sub" target="require" />
+    <edge source="add" target="require" />
+    <edge source="transfer" target="require" />
+    <edge source="transfer" target="Transfer" />
+    <edge source="transferFrom" target="require" />
+    <edge source="transferFrom" target="Transfer" />
+    <edge source="approve" target="Approval" />
+    <edge source="transferOwnership" target="require" />
+    <edge source="transferOwnership" target="OwnershipTransferred" />
+    <edge source="pause" target="Pause" />
+    <edge source="unpause" target="Unpause" />
+    <edge source="batchTransfer" target="require" />
+    <edge source="batchTransfer" target="Transfer" />
+    <edge source="constructor" target="revert" />
+  </graph>
+</graphml>

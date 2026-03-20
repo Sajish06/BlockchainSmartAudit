@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="sub" />
+    <node id="add" />
+    <node id="balanceOf" />
+    <node id="transfer" />
+    <node id="commitDividend" />
+    <node id="allowance" />
+    <node id="transferFrom" />
+    <node id="approve" />
+    <node id="SmartBillions" />
+    <node id="hashesLength" />
+    <node id="walletBalanceOf" />
+    <node id="walletPeriodOf" />
+    <node id="walletBlockOf" />
+    <node id="betValueOf" />
+    <node id="betHashOf" />
+    <node id="betBlockNumberOf" />
+    <node id="dividendsBlocks" />
+    <node id="changeOwner" />
+    <node id="changeAnimator" />
+    <node id="setInvestStart" />
+    <node id="setBetMax" />
+    <node id="resetBet" />
+    <node id="coldStore" />
+    <node id="hotStore" />
+    <node id="houseKeeping" />
+    <node id="payWallet" />
+    <node id="pay" />
+    <node id="investDirect" />
+    <node id="invest" />
+    <node id="disinvest" />
+    <node id="payDividends" />
+    <node id="betPrize" />
+    <node id="betOf" />
+    <node id="won" />
+    <node id="constructor" />
+    <node id="play" />
+    <node id="playRandom" />
+    <node id="playSystem" />
+    <node id="addHashes" />
+    <node id="addHashes128" />
+    <node id="calcHashes" />
+    <node id="getHash" />
+    <node id="putHash" />
+    <node id="putHashes" />
+    <node id="assert" />
+    <node id="Transfer" />
+    <node id="Approval" />
+    <node id="require" />
+    <node id="LogInvestment" />
+    <node id="LogDividend" />
+    <node id="Bet" />
+    <node id="LogLate" />
+    <node id="LogLoss" />
+    <node id="LogWin" />
+    <node id="LogRecordWin" />
+    <node id="sha3" />
+    <node id="LogBet" />
+    <edge source="sub" target="assert" />
+    <edge source="add" target="assert" />
+    <edge source="transfer" target="commitDividend" />
+    <edge source="transfer" target="Transfer" />
+    <edge source="commitDividend" target="LogDividend" />
+    <edge source="transferFrom" target="commitDividend" />
+    <edge source="transferFrom" target="Transfer" />
+    <edge source="approve" target="assert" />
+    <edge source="approve" target="Approval" />
+    <edge source="changeOwner" target="assert" />
+    <edge source="changeOwner" target="commitDividend" />
+    <edge source="changeAnimator" target="assert" />
+    <edge source="changeAnimator" target="commitDividend" />
+    <edge source="setInvestStart" target="require" />
+    <edge source="coldStore" target="houseKeeping" />
+    <edge source="coldStore" target="require" />
+    <edge source="hotStore" target="houseKeeping" />
+    <edge source="payWallet" target="pay" />
+    <edge source="pay" target="houseKeeping" />
+    <edge source="investDirect" target="invest" />
+    <edge source="invest" target="require" />
+    <edge source="invest" target="Transfer" />
+    <edge source="invest" target="LogInvestment" />
+    <edge source="disinvest" target="require" />
+    <edge source="disinvest" target="commitDividend" />
+    <edge source="disinvest" target="Transfer" />
+    <edge source="disinvest" target="payWallet" />
+    <edge source="payDividends" target="require" />
+    <edge source="payDividends" target="commitDividend" />
+    <edge source="payDividends" target="payWallet" />
+    <edge source="betOf" target="betPrize" />
+    <edge source="betOf" target="getHash" />
+    <edge source="won" target="Bet" />
+    <edge source="won" target="payWallet" />
+    <edge source="won" target="require" />
+    <edge source="won" target="LogLate" />
+    <edge source="won" target="getHash" />
+    <edge source="won" target="betPrize" />
+    <edge source="won" target="LogLoss" />
+    <edge source="won" target="LogWin" />
+    <edge source="won" target="LogRecordWin" />
+    <edge source="won" target="pay" />
+    <edge source="constructor" target="play" />
+    <edge source="constructor" target="invest" />
+    <edge source="constructor" target="commitDividend" />
+    <edge source="constructor" target="won" />
+    <edge source="play" target="playSystem" />
+    <edge source="play" target="sha3" />
+    <edge source="playRandom" target="playSystem" />
+    <edge source="playRandom" target="sha3" />
+    <edge source="playSystem" target="won" />
+    <edge source="playSystem" target="require" />
+    <edge source="playSystem" target="Bet" />
+    <edge source="playSystem" target="LogBet" />
+    <edge source="playSystem" target="putHash" />
+    <edge source="addHashes" target="require" />
+    <edge source="addHashes128" target="addHashes" />
+    <edge source="putHash" target="calcHashes" />
+    <edge source="putHashes" target="putHash" />
+  </graph>
+</graphml>

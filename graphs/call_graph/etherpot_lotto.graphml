@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="getBlocksPerRound" />
+    <node id="getTicketPrice" />
+    <node id="getRoundIndex" />
+    <node id="getIsCashed" />
+    <node id="calculateWinner" />
+    <node id="getDecisionBlockNumber" />
+    <node id="getSubpotsCount" />
+    <node id="getSubpot" />
+    <node id="cash" />
+    <node id="getHashOfBlock" />
+    <node id="getBuyers" />
+    <node id="getTicketsCountByBuyer" />
+    <node id="getPot" />
+    <node id="constructor" />
+    <edge source="calculateWinner" target="getDecisionBlockNumber" />
+    <edge source="calculateWinner" target="getHashOfBlock" />
+    <edge source="getSubpot" target="getSubpotsCount" />
+    <edge source="cash" target="getSubpotsCount" />
+    <edge source="cash" target="getDecisionBlockNumber" />
+    <edge source="cash" target="calculateWinner" />
+    <edge source="cash" target="getSubpot" />
+    <edge source="constructor" target="getRoundIndex" />
+  </graph>
+</graphml>

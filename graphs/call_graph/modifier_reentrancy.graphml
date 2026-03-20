@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="airDrop" />
+    <node id="supportsToken" />
+    <node id="call" />
+    <node id="keccak256" />
+    <node id="ModifierEntrancy" />
+    <edge source="supportsToken" target="keccak256" />
+    <edge source="supportsToken" target="ModifierEntrancy" />
+    <edge source="call" target="ModifierEntrancy" />
+  </graph>
+</graphml>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="LuckyDoubler" />
+    <node id="constructor" />
+    <node id="init" />
+    <node id="join" />
+    <node id="rand" />
+    <node id="changeOwner" />
+    <node id="changeMultiplier" />
+    <node id="changeFee" />
+    <node id="multiplierFactor" />
+    <node id="currentFee" />
+    <node id="totalEntries" />
+    <node id="userStats" />
+    <node id="entryDetails" />
+    <node id="Entry" />
+    <edge source="constructor" target="init" />
+    <edge source="init" target="join" />
+    <edge source="join" target="Entry" />
+    <edge source="join" target="rand" />
+  </graph>
+</graphml>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="constructor" />
+    <node id="TownCrier" />
+    <node id="upgrade" />
+    <node id="reset" />
+    <node id="suspend" />
+    <node id="restart" />
+    <node id="withdraw" />
+    <node id="request" />
+    <node id="deliver" />
+    <node id="cancel" />
+    <node id="Upgrade" />
+    <node id="Reset" />
+    <node id="sha3" />
+    <node id="RequestInfo" />
+    <node id="DeliverInfo" />
+    <node id="Cancel" />
+    <edge source="upgrade" target="Upgrade" />
+    <edge source="reset" target="Reset" />
+    <edge source="request" target="sha3" />
+    <edge source="request" target="RequestInfo" />
+    <edge source="deliver" target="DeliverInfo" />
+    <edge source="cancel" target="Cancel" />
+  </graph>
+</graphml>

@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="balanceOf" />
+    <node id="transfer" />
+    <node id="transferFrom" />
+    <node id="approve" />
+    <node id="allowance" />
+    <node id="recoverSigner" />
+    <node id="isSignedBy" />
+    <node id="hexstrToBytes" />
+    <node id="parseInt16Char" />
+    <node id="uintToBytes32" />
+    <node id="toEthereumSignedMessage" />
+    <node id="uintToString" />
+    <node id="substring" />
+    <node id="constructor" />
+    <node id="approveAndCall" />
+    <node id="createChannel" />
+    <node id="LCOpenTimeout" />
+    <node id="joinChannel" />
+    <node id="deposit" />
+    <node id="consensusCloseChannel" />
+    <node id="updateLCstate" />
+    <node id="initVCstate" />
+    <node id="settleVC" />
+    <node id="closeVirtualChannel" />
+    <node id="byzantineCloseChannel" />
+    <node id="_isContained" />
+    <node id="getChannel" />
+    <node id="getVirtualChannel" />
+    <node id="require" />
+    <node id="keccak256" />
+    <node id="ecrecover" />
+    <node id="revert" />
+    <node id="Transfer" />
+    <node id="Approval" />
+    <node id="HumanStandardToken" />
+    <node id="DidLCOpen" />
+    <node id="DidLCClose" />
+    <node id="DidLCJoin" />
+    <node id="DidLCDeposit" />
+    <node id="DidLCUpdateState" />
+    <node id="DidVCInit" />
+    <node id="DidVCSettle" />
+    <node id="DidVCClose" />
+    <edge source="transfer" target="require" />
+    <edge source="transfer" target="Transfer" />
+    <edge source="transferFrom" target="require" />
+    <edge source="transferFrom" target="Transfer" />
+    <edge source="approve" target="Approval" />
+    <edge source="recoverSigner" target="require" />
+    <edge source="recoverSigner" target="keccak256" />
+    <edge source="recoverSigner" target="hexstrToBytes" />
+    <edge source="recoverSigner" target="substring" />
+    <edge source="recoverSigner" target="ecrecover" />
+    <edge source="isSignedBy" target="require" />
+    <edge source="isSignedBy" target="recoverSigner" />
+    <edge source="hexstrToBytes" target="require" />
+    <edge source="hexstrToBytes" target="substring" />
+    <edge source="hexstrToBytes" target="parseInt16Char" />
+    <edge source="hexstrToBytes" target="uintToBytes32" />
+    <edge source="parseInt16Char" target="revert" />
+    <edge source="toEthereumSignedMessage" target="require" />
+    <edge source="toEthereumSignedMessage" target="keccak256" />
+    <edge source="toEthereumSignedMessage" target="uintToString" />
+    <edge source="substring" target="require" />
+    <edge source="approveAndCall" target="Approval" />
+    <edge source="approveAndCall" target="require" />
+    <edge source="approveAndCall" target="keccak256" />
+    <edge source="createChannel" target="require" />
+    <edge source="createChannel" target="HumanStandardToken" />
+    <edge source="createChannel" target="DidLCOpen" />
+    <edge source="LCOpenTimeout" target="require" />
+    <edge source="LCOpenTimeout" target="DidLCClose" />
+    <edge source="joinChannel" target="require" />
+    <edge source="joinChannel" target="DidLCJoin" />
+    <edge source="deposit" target="require" />
+    <edge source="deposit" target="DidLCDeposit" />
+    <edge source="consensusCloseChannel" target="require" />
+    <edge source="consensusCloseChannel" target="keccak256" />
+    <edge source="consensusCloseChannel" target="DidLCClose" />
+    <edge source="updateLCstate" target="require" />
+    <edge source="updateLCstate" target="keccak256" />
+    <edge source="updateLCstate" target="DidLCUpdateState" />
+    <edge source="initVCstate" target="require" />
+    <edge source="initVCstate" target="keccak256" />
+    <edge source="initVCstate" target="_isContained" />
+    <edge source="initVCstate" target="DidVCInit" />
+    <edge source="settleVC" target="require" />
+    <edge source="settleVC" target="keccak256" />
+    <edge source="settleVC" target="DidVCSettle" />
+    <edge source="closeVirtualChannel" target="require" />
+    <edge source="closeVirtualChannel" target="DidVCClose" />
+    <edge source="byzantineCloseChannel" target="require" />
+    <edge source="byzantineCloseChannel" target="DidLCClose" />
+    <edge source="_isContained" target="keccak256" />
+  </graph>
+</graphml>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="OpenAddressLottery" />
+    <node id="participate" />
+    <node id="luckyNumberOfAddress" />
+    <node id="reseed" />
+    <node id="kill" />
+    <node id="forceReseed" />
+    <node id="constructor" />
+    <node id="SeedComponents" />
+    <node id="require" />
+    <node id="keccak256" />
+    <node id="selfdestruct" />
+    <edge source="OpenAddressLottery" target="reseed" />
+    <edge source="OpenAddressLottery" target="SeedComponents" />
+    <edge source="participate" target="require" />
+    <edge source="participate" target="luckyNumberOfAddress" />
+    <edge source="participate" target="reseed" />
+    <edge source="participate" target="SeedComponents" />
+    <edge source="luckyNumberOfAddress" target="keccak256" />
+    <edge source="reseed" target="keccak256" />
+    <edge source="kill" target="require" />
+    <edge source="kill" target="selfdestruct" />
+    <edge source="forceReseed" target="require" />
+    <edge source="forceReseed" target="reseed" />
+    <edge source="constructor" target="participate" />
+  </graph>
+</graphml>

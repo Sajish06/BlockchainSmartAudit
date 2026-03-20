@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="DynamicPyramid" />
+    <node id="constructor" />
+    <node id="init" />
+    <node id="addPayout" />
+    <node id="collectAllFees" />
+    <node id="collectFeesInEther" />
+    <node id="collectPercentOfFees" />
+    <node id="changeOwner" />
+    <node id="changeMultiplier" />
+    <node id="changeFeePercentage" />
+    <node id="currentMultiplier" />
+    <node id="currentFeePercentage" />
+    <node id="currentPyramidBalanceApproximately" />
+    <node id="nextPayoutWhenPyramidBalanceTotalsApproximately" />
+    <node id="feesSeperateFromBalanceApproximately" />
+    <node id="totalParticipants" />
+    <node id="numberOfParticipantsWaitingForPayout" />
+    <node id="participantDetails" />
+    <node id="Participant" />
+    <edge source="constructor" target="init" />
+    <edge source="init" target="addPayout" />
+    <edge source="addPayout" target="Participant" />
+    <edge source="collectFeesInEther" target="collectAllFees" />
+  </graph>
+</graphml>

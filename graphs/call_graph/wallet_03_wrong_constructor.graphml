@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="initWallet" />
+    <node id="deposit" />
+    <node id="withdraw" />
+    <node id="migrateTo" />
+    <node id="assert" />
+    <node id="require" />
+    <edge source="deposit" target="assert" />
+    <edge source="withdraw" target="require" />
+    <edge source="migrateTo" target="require" />
+  </graph>
+</graphml>

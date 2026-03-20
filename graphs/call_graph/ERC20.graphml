@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="mul" />
+    <node id="div" />
+    <node id="sub" />
+    <node id="add" />
+    <node id="mod" />
+    <node id="constructor" />
+    <node id="balanceOf" />
+    <node id="allowance" />
+    <node id="transfer" />
+    <node id="approve" />
+    <node id="transferFrom" />
+    <node id="require" />
+    <node id="Transfer" />
+    <node id="Approval" />
+    <edge source="mul" target="require" />
+    <edge source="div" target="require" />
+    <edge source="sub" target="require" />
+    <edge source="add" target="require" />
+    <edge source="mod" target="require" />
+    <edge source="transfer" target="require" />
+    <edge source="transfer" target="Transfer" />
+    <edge source="approve" target="require" />
+    <edge source="approve" target="Approval" />
+    <edge source="transferFrom" target="require" />
+    <edge source="transferFrom" target="Transfer" />
+  </graph>
+</graphml>

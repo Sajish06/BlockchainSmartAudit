@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="DranMe" />
+    <node id="getLength" />
+    <node id="setSecret" />
+    <node id="getPlayerCount" />
+    <node id="getPrize" />
+    <node id="becomePlayer" />
+    <node id="manipulateSecret" />
+    <node id="unlockSecret" />
+    <node id="callFirstTarget" />
+    <node id="callSecondTarget" />
+    <node id="setSeed" />
+    <node id="addSeed" />
+    <node id="guessSeed" />
+    <node id="checkSecret" />
+    <node id="winPrize" />
+    <node id="claimPrize" />
+    <node id="constructor" />
+    <node id="require" />
+    <node id="keccak256" />
+    <node id="blockhash" />
+    <edge source="becomePlayer" target="require" />
+    <edge source="manipulateSecret" target="require" />
+    <edge source="manipulateSecret" target="unlockSecret" />
+    <edge source="unlockSecret" target="keccak256" />
+    <edge source="unlockSecret" target="blockhash" />
+    <edge source="callFirstTarget" target="require" />
+    <edge source="callSecondTarget" target="require" />
+    <edge source="checkSecret" target="require" />
+  </graph>
+</graphml>

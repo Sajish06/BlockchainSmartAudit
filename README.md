@@ -141,42 +141,69 @@ variable declarations
 expressions and statements
 
 2) Build CFG graphs from AST
+
 python build_cfg.py
 
 What it does
+
 Reads AST JSON files from ast_json/
+
 Converts them into execution-flow graphs
+
 Saves GraphML files into:
+
 graphs/cfg/<contract>.graphml
 
 Tech behind it
+
 CFG = Control Flow Graph
+
 Nodes represent execution blocks
+
 Edges represent possible execution transitions
+
 Graph contains security-relevant node features such as:
+
 is_external_call
+
 is_state_write
+
 is_conditional
+
 is_loop
+
 is_return
 
 3) Run AI prediction on a specific contract
+
 python check_contract.py MyContract.sol
 
 What it does
+
 Ensures AST + CFG exist (or rebuilds them)
+
 Loads the trained GNN weights from:
+
 ml/model.pt
+
 Runs inference on the CFG
+
 Prints:
+
 AI risk score
+
 high-risk / low-risk interpretation
 
 Tech behind it
+
 Uses PyTorch Geometric graph tensors:
+
 x = node feature matrix
+
 edge_index = graph connectivity
+
 Outputs a probability-like score:
+
 0.00 (low risk) → 1.00 (high risk)
 
 🧨 Optional: Exploit Sandbox (Phase 4)
@@ -186,17 +213,27 @@ This module is intentionally separated from AI inference.
 python phase4/scripts/exploit_runner.py
 
 What it does
+
 Deploys a reference vulnerable contract (e.g., reentrancy bank)
+
 Deploys attacker contract
+
 Executes exploit on local Ganache blockchain
+
 Confirms exploit success by showing balance drain
+
 Why it exists
+
 AI is a risk signal. Exploits are proof.
+
 This phase demonstrates that:
+
 vulnerabilities are not theoretical
+
 they lead to real fund loss in practice
 
 ⚠️ Note: Exploit verification currently runs on a reference vulnerable contract template.
+
 Automatic exploit generation for arbitrary contracts is an open research problem and is future work.
 
 ---
@@ -206,12 +243,19 @@ Automatic exploit generation for arbitrary contracts is an open research problem
 Example output:
 
 [+] AI Risk Score: 0.93
+
 [⚠] High-risk patterns detected (AI prediction only)
+
 Risk score meaning
+
 Score Range	Meaning
+
 0.00 – 0.30	Likely safe patterns
+
 0.30 – 0.70	Suspicious / uncertain
+
 0.70 – 1.00	High-risk patterns
+
 
 ⚠️ The AI score is conservative and may produce false positives, especially for contracts with public state writes.
 
@@ -220,21 +264,33 @@ Score Range	Meaning
 ### 🌍 Social Relevance / Real-World Impact
 
 Smart contract vulnerabilities are responsible for:
+
 massive financial losses
+
 protocol hacks
+
 rug pulls
+
 broken DeFi systems
 
 This project contributes toward:
+
 safer blockchain infrastructure
+
 faster vulnerability triage
+
 security automation for developers
+
 reducing the cost of audits for small teams
 
 Even a simple automated risk scanner can help prevent:
+
 loss of user funds
+
 broken governance contracts
+
 unsafe token contracts
+
 insecure DeFi logic
 
 ---
